@@ -4,8 +4,9 @@ from datetime import datetime
 from colorama import init, Fore, Style
 
 # ---------------- USER-DEFINED OPTIONS ---------------- #
-SLEEP_TIME = 2         # Time between updates in seconds (e.g., 2 seconds = 2000ms)
-COINS_DISPLAYED = 10   # Number of top coins to display in the console
+SLEEP_TIME = 30         # Time between updates in seconds (e.g., 2 seconds = 2000ms)
+COINS_DISPLAYED = 100    # Number of top coins to display in the console
+MAX_NAME_LENGTH = 15    # Maximum length of the coin name displayed
 # ------------------------------------------------------- #
 
 # Initialize colorama
@@ -31,6 +32,13 @@ def format_volume(volume):
     else:
         return f"{volume:.2f}"
 
+# Helper function to truncate names and keep formatting uniform
+def truncate_name(name, max_length):
+    if len(name) > max_length:
+        return name[:max_length-3] + "..."
+    else:
+        return name
+
 # Function to display the data in a well-designed format
 def display_data(data, previous_data):
     print(Style.BRIGHT + Fore.CYAN + f"{'RANK':<6}{'NAME':<15}{'PRICE (USD)':<15}{'24H VOL':<15}{'24H CHANGE':<10}")
@@ -38,7 +46,7 @@ def display_data(data, previous_data):
     
     for item in data[:COINS_DISPLAYED]:  # Display the number of coins defined by COINS_DISPLAYED
         symbol = item['symbol']
-        name = item['name']
+        name = truncate_name(item['name'], MAX_NAME_LENGTH)
         rank = item['rank']
         price = float(item['priceUsd'])
         volume_24hr = format_volume(float(item['volumeUsd24Hr']) if item['volumeUsd24Hr'] else 0)
