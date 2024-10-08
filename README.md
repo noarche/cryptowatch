@@ -1,5 +1,8 @@
-# cryptowatch
+#  ꧁꧂  🛈 ABOUT 
+
 Simple python script that displays up to 100 coins in terminal with updates via api.
+
+![image](https://github.com/user-attachments/assets/5650364c-358c-4a2f-8ef8-f79065201ee9)
 
 
 ![noarche-cryptowatch](https://github.com/user-attachments/assets/8e5210b6-1868-43dc-9079-0eb50ee8c933)
@@ -7,7 +10,7 @@ Simple python script that displays up to 100 coins in terminal with updates via 
 -------------------------------------------------------------------
 -------------------------------------------------------------------
 
-# ꧁꧂  Buy me a coffee ☕
+# ꧁꧂  🥛 Send me a glass of whole milk
 
 ![qrCode](https://raw.githubusercontent.com/noarche/cd-ripper/main/unrelated-ignore/CryptoQRcodes.png)
 
@@ -26,7 +29,7 @@ Simple python script that displays up to 100 coins in terminal with updates via 
 
 ![noarche's GitHub stats](https://github-readme-stats.vercel.app/api?username=noarche&show_icons=true&theme=transparent)
 
-# Looking for a tool to download Video, Audio, Or live streaming Video??
+# ꧁꧂  🗈 Looking for a tool to download Video, Audio, Or live streaming Video??
 
 This tool works MOST websites, not limited to youtube!!
 
